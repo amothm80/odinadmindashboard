@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+#right-sidebar{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px;
+}
+
+.right-side-row{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
