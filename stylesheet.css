@@ -60,7 +60,7 @@ body {
 #content {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 150px auto;
+  grid-template-rows: 170px auto;
 }
 
 /*header*/
@@ -90,8 +90,19 @@ body {
 #search {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
   gap: 10px;
+}
+
+#search a{
+    align-self: center;
+}
+
+#search a img{
+    height: 30px;
+    width: 25px;
+    align-self: center;
 }
 
 #search input {
@@ -106,13 +117,34 @@ body {
 #profile-info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
+}
+
+#profile-info a img{
+    height: 30px;
+    width: 25px;
+    align-self: center;
+}
+
+#profile-info img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
 }
 
 #profile-greeting {
   display: flex;
   flex-direction: row;
+  gap: 10px
 }
+
+#profile-greeting img{
+    height: 60px;
+    width: 60px;
+    align-self: center;
+}
+
 
 #profile-greeting div {
   display: flex;
@@ -196,3 +228,43 @@ body {
     margin-bottom: 15px;
     box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.1);
   }
+
+  .trending-cards {
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 20px;
+    gap:10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.1);
+  }
+  .trending-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .trending-img img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+  }
+
+#control-buttons button{
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #4299e1;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 26px;
+}
+
